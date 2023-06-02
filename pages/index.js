@@ -1,11 +1,10 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import Login from "../components/Login.js";
+import React from 'react'
 
 export default function Home() {
   return (
     <>
-      <Login />
+      <div className='font-lato'>Hello world from Lato</div>
+      <div className='font-playfair'>Hello world from Playfair</div>
     </>
   );
 }
