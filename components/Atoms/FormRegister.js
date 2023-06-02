@@ -16,7 +16,7 @@ export default function FormRegister() {
             <div className="rounded-md shadow-sm">
               <div>
                 <label
-                  className="text-[#444444] font-lato text-md"
+                  className="text-[#B7B7B7] font-lato text-md"
                   htmlFor="user"
                 >
                   Usuario:
@@ -26,11 +26,11 @@ export default function FormRegister() {
                   type="text"
                   required
                   autoComplete="off"
-                  className="relative w-full rounded-sm py-1 text-gray-900 border-[0.1px] border-gray-400 placeholder:text-gray-400 sm:text-sm sm:leading-6 font-lato pl-2"
+                  className="relative w-full rounded-sm py-1 text-gray-500 border-[0.1px] border-gray-400 placeholder:text-gray-400 sm:text-sm sm:leading-6 font-lato pl-2"
                 />
               </div>
               <div className="mt-8">
-                <label className="text-[#444444] font-lato" htmlFor="password">
+                <label className="text-[#B7B7B7] font-lato" htmlFor="password">
                   Contraseña:
                 </label>
                 <input
@@ -38,7 +38,7 @@ export default function FormRegister() {
                   type="password"
                   autoComplete="off"
                   required
-                  className="relative block w-full rounded-sm py-1 text-gray-900 border-[0.1px] border-gray-400 placeholder:text-gray-400  sm:text-sm sm:leading-6 font-lato pl-2"
+                  className="relative block w-full rounded-sm py-1 text-gray-500 border-[0.1px] border-gray-400 placeholder:text-gray-400  sm:text-sm sm:leading-6 font-lato pl-2"
                 />
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function FormRegister() {
               <div className="flex justify-center">
                 <div className="flex items-center text-sm">
                   <label
-                    className="font-lato text-[#B7B7B7] "
+                    className="font-lato text-[#B7B7B7]"
                   >
                     ¿Ya tienes una cuenta?
                   </label>
