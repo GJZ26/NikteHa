@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Advice from '@/components/Advice';
 import Navbar from '@/components/Navbar';
 import Text from '@/components/Text';
 import Head from 'next/head';
@@ -17,6 +18,7 @@ export default function Home() {
         <Navbar/>
         <Text/>
         <About/>
+        <Advice/>
       </div>
     </>
   );
