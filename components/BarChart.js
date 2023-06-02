@@ -4,24 +4,25 @@ import Head from 'next/head'
 import React from "react";
 import Chart from "chart.js";
 
-export default function LineChart(props) {
+export default function BarChart(props) {
     React.useEffect(() => {
       var config = {
-        type: "line",
+        type: "bar",
         data: {
           labels: props.label,
           datasets: [
             {
               label: props.um,
-              backgroundColor: "#3182ce",
+              backgroundColor: "#0B8892",
               borderColor: "#0B8892",
               data: props.data,
               fill: false,
+              borderRadius: 10,
             }
           ]
         }
       };
-      var ctx = document.getElementById("line-chart").getContext("2d");
+      var ctx = document.getElementById("line-chart-bar").getContext("2d");
       window.myLine = new Chart(ctx, config);
     }, []);
     return (
@@ -37,7 +38,7 @@ export default function LineChart(props) {
           <div className="p-4 flex-auto">
             {/* Chart */}
             <div className="relative h-350-px">
-              <canvas id="line-chart"></canvas>
+              <canvas id="line-chart-bar"></canvas>
             </div>
           </div>
         </div>

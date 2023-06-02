@@ -3,8 +3,11 @@ import Head from 'next/head'
 import React from 'react'
 import { useEffect } from 'react'
 
-import data from '../data/fakeInfo.json'
+import dataA from '../data/fakeInfo.json'
+import dataB from '../data/DBO.json'
+
 import LineChart from '@/components/LineChart'
+import BarChart from '@/components/BarChart'
 
 export default function stadistics() {
   const dataInfo = []
@@ -25,19 +28,19 @@ export default function stadistics() {
   }
 
 
-  for (const i in data) {
-    if (data[i].date.includes("Jan")) dataByMonth["Jan"].push(data[i].cetimeter)
-    if (data[i].date.includes("Feb")) dataByMonth["Feb"].push(data[i].cetimeter)
-    if (data[i].date.includes("Mar")) dataByMonth["Mar"].push(data[i].cetimeter)
-    if (data[i].date.includes("Apr")) dataByMonth["Apr"].push(data[i].cetimeter)
-    if (data[i].date.includes("May")) dataByMonth["May"].push(data[i].cetimeter)
-    if (data[i].date.includes("Jun")) dataByMonth["Jun"].push(data[i].cetimeter)
-    if (data[i].date.includes("Jul")) dataByMonth["Jul"].push(data[i].cetimeter)
-    if (data[i].date.includes("Aug")) dataByMonth["Aug"].push(data[i].cetimeter)
-    if (data[i].date.includes("Sep")) dataByMonth["Sep"].push(data[i].cetimeter)
-    if (data[i].date.includes("Oct")) dataByMonth["Oct"].push(data[i].cetimeter)
-    if (data[i].date.includes("Nov")) dataByMonth["Nov"].push(data[i].cetimeter)
-    if (data[i].date.includes("Dec")) dataByMonth["Dec"].push(data[i].cetimeter)
+  for (const i in dataA) {
+    if (dataA[i].date.includes("Jan")) dataByMonth["Jan"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Feb")) dataByMonth["Feb"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Mar")) dataByMonth["Mar"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Apr")) dataByMonth["Apr"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("May")) dataByMonth["May"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Jun")) dataByMonth["Jun"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Jul")) dataByMonth["Jul"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Aug")) dataByMonth["Aug"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Sep")) dataByMonth["Sep"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Oct")) dataByMonth["Oct"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Nov")) dataByMonth["Nov"].push(dataA[i].cetimeter)
+    if (dataA[i].date.includes("Dec")) dataByMonth["Dec"].push(dataA[i].cetimeter)
   }
 
   for (const j in dataByMonth) {
@@ -58,13 +61,21 @@ export default function stadistics() {
         <link rel="icon" href="/icon.png" />
       </Head>
       <Navbar />
-        <div className='pt-16  h-screen w-full max-w-sm'>
+      <div className='pt-16  h-screen w-full max-w-sm'>
         <LineChart
-        title="Flujo de agua en 2022"
-        data={dataInfo}
-        label={label}
-      />
-        </div>
+          title="Flujo de agua en 2022"
+          data={dataInfo}
+          label={label}
+          um="cm cúbicos"
+        />
+        <BarChart
+          title="DBO en aguas residuales"
+          data={dataB.data}
+          label={dataB.label}
+          um="mg/l"
+        >
+        </BarChart>
+      </div>
     </>
   )
 }
