@@ -24,6 +24,7 @@ function Navbar() {
               <li className='ml-10 text-lg hover:animate-pulse hover:scale-110 duration-300 cursor-pointer  hover:text-[#34A5AD]'>Haz una denuncia</li>
             </LinkNext>
             <Link
+            to='/id'
             smooth={true}
             spy={true}
              >
