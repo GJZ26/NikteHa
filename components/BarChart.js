@@ -31,7 +31,7 @@ export default function BarChart(props) {
           <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
             <div className="flex flex-wrap items-center">
               <div className="relative w-full max-w-full flex-grow flex-1">
-                <h2 className="text-black text-xl font-semibold">{props.title}</h2>
+                <h2 className="text-black text-xl font-lato">{props.title}</h2>
               </div>
             </div>
           </div>

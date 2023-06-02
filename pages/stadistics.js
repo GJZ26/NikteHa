@@ -8,6 +8,7 @@ import dataB from '../data/DBO.json'
 
 import LineChart from '@/components/LineChart'
 import BarChart from '@/components/BarChart'
+import StadisticsTable from '@/components/StadisticsTable'
 
 export default function stadistics() {
   const dataInfo = []
@@ -61,21 +62,23 @@ export default function stadistics() {
         <link rel="icon" href="/icon.png" />
       </Head>
       <Navbar />
-      <div className='pt-16  h-screen w-full max-w-sm'>
+      <StadisticsTable 
+        char1={ 
         <LineChart
           title="Flujo de agua en 2022"
           data={dataInfo}
           label={label}
           um="cm cúbicos"
-        />
-        <BarChart
+        />}
+        char2={
+          <BarChart
           title="DBO en aguas residuales"
           data={dataB.data}
           label={dataB.label}
           um="mg/l"
-        >
-        </BarChart>
-      </div>
+        />
+        } 
+        />
     </>
   )
 }
