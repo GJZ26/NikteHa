@@ -1,6 +1,6 @@
 import Head from "next/head.js";
-import Form from "@/components/Atoms/FormLogin.js";
-import PhotoLogin from "@/components/Atoms/PhotoLogin.js";
+import FormRegister from "@/components/Atoms/FormRegister.js";
+import PhotoRegister from "@/components/Atoms/PhotoRegister.js";
 
 export default function Home() {
   return (
@@ -12,11 +12,11 @@ export default function Home() {
         <link rel="icon" href="/icon.png" />
       </Head>
       <div className="w-full h-screen flex items-center">
-        <div className="sm:relative w-full sm:w-1/2 h-full flex flex-col">
-          <Form/>
-        </div>
         <div className="relative w-1/2 h-full sm:flex flex-col hidden">
-          <PhotoLogin/>
+            <PhotoRegister/>
+        </div>
+        <div className="sm:relative w-full sm:w-1/2 h-full flex flex-col">
+          <FormRegister/>
         </div>
       </div>
     </>
