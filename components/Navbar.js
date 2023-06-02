@@ -4,8 +4,8 @@ import LinkNext from 'next/link'
 
 function Navbar() {
   return (
-    <div className=' hidden md:flex md:fixed w-full h-32 z-50  bg-[#FFFFF6]'>
-    <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 font-crimson font-extralight ">
+    <div className=' hidden md:flex md:fixed w-full h-32 z-50  bg-white'>
+    <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 font-lato  font-extralight ">
         <div className='ml-4 md:ml-32 text-[#0B8892]'>
           <ul className='hidden md:flex mr-12'>
           <LinkNext
@@ -35,7 +35,7 @@ function Navbar() {
         <div>
             <LinkNext
             href='/login'>
-            <button className="mr-12 text-[#0B8892] border-[0.1px] py-1 px-14 rounded-md border-[#0B8892] hover:scale-105 duration-300">
+            <button className="mr-12 text-[#0B8892] border-[0.1px] py-1 px-8 rounded-md border-[#0B8892] hover:scale-105 duration-300">
               Iniciar sesión
             </button>
             </LinkNext>

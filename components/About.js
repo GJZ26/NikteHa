@@ -29,7 +29,7 @@ export default function About() {
           <div className="max-w-[600px]">
             <div className="flex justify-center">
               <p className="mt-8 text-[#0B8892] border-[0.1px] py-1 px-14 rounded-md border-[#0B8892] cursor-pointer">
-                Saber mas
+                Saber más
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function About() {
           <div className="max-w-[600px]">
             <div className="flex justify-center">
               <button className="mt-8 text-[#0B8892] border-[0.1px] py-1 px-14 rounded-md border-[#0B8892]">
-                Saber mas
+                Saber más
               </button>
             </div>
           </div>

@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.png" />
       </Head>
-      <div className='bg-[#FFFFF6] w-full h-screen flex flex-col'>
+      <div className='bg-white w-full h-screen flex flex-col'>
         <Navbar/>
         <Text/>
         <About/>

@@ -57,12 +57,14 @@ export default function stadistics() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icon.png" />
       </Head>
-      {/* <Navbar /> */}
-      <LineChart
+      <Navbar />
+        <div className='pt-16  h-screen w-full max-w-sm'>
+        <LineChart
         title="Flujo de agua en 2022"
         data={dataInfo}
         label={label}
       />
+        </div>
     </>
   )
 }
