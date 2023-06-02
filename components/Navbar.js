@@ -8,16 +8,20 @@ function Navbar() {
     <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 font-crimson font-extralight ">
         <div className='ml-4 md:ml-32 text-[#0B8892]'>
           <ul className='hidden md:flex mr-12'>
-            <Link
-            smooth={true}
-            spy={true}
-            >
-              <li className='text-lg hover:animate-pulse hover:scale-110 duration-300 cursor-pointer  hover:text-[#34A5AD]'>Inicio</li>
-            </Link>
+          <LinkNext
+            href="/"
+           >
+              <li className='ml-10 text-lg hover:animate-pulse hover:scale-110 duration-300 cursor-pointer  hover:text-[#34A5AD]'>Inicio</li>
+            </LinkNext>
             <LinkNext
             href="/stadistics"
            >
               <li className='ml-10 text-lg hover:animate-pulse hover:scale-110 duration-300 cursor-pointer  hover:text-[#34A5AD]'>Información</li>
+            </LinkNext>
+            <LinkNext
+            href="/complaint"
+           >
+              <li className='ml-10 text-lg hover:animate-pulse hover:scale-110 duration-300 cursor-pointer  hover:text-[#34A5AD]'>Haz una denuncia</li>
             </LinkNext>
             <Link
             smooth={true}
