@@ -14,12 +14,11 @@ function Navbar() {
             >
               <li className='text-lg hover:animate-pulse hover:scale-110 duration-300 cursor-pointer  hover:text-[#34A5AD]'>Inicio</li>
             </Link>
-            <Link
-            smooth={true}
-            spy={true}
+            <LinkNext
+            href="/stadistics"
            >
-              <li className='ml-10 text-lg hover:animate-pulse hover:scale-110 duration-300 cursor-pointer  hover:text-[#34A5AD]'>Nosotros</li>
-            </Link>
+              <li className='ml-10 text-lg hover:animate-pulse hover:scale-110 duration-300 cursor-pointer  hover:text-[#34A5AD]'>Información</li>
+            </LinkNext>
             <Link
             smooth={true}
             spy={true}
