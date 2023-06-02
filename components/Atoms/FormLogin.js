@@ -4,7 +4,7 @@ import React from "react";
 export default function FormLogin() {
   return (
     <>
-      <div className="flex min-h-full justify-center px-4 items-center sm:px-6 lg:px-8 bg-[#FCFCFC]">
+      <div className="flex min-h-full justify-center px-4 items-center sm:px-6 lg:px-8 bg-[#FCFCFC] ">
         <div className="w-full max-w-md">
           <div className="flex flex-col justify-center items-center space-y-6">
             <img className="w-12" src="/icon.png" alt="" />
